@@ -73,21 +73,7 @@ ai-image-generator/
 │
 ├── app.py              # Main Streamlit application
 ├── README.md           # This file
-└── requirements.txt    # Python dependencies (optional)
-```
-
-## 📦 Dependencies
-
-- `streamlit` - Web application framework
-- `huggingface-hub` - Hugging Face API client
-- `pillow` - Image processing library
-
-Create a `requirements.txt` file with:
-
-```
-streamlit
-huggingface-hub
-pillow
+└── requirements.txt    # Python dependencies 
 ```
 
 ## 🛠️ Customization
@@ -97,7 +83,7 @@ To use a different model, modify the model parameter in the `text_to_image` call
 
 ```python
 image = client.text_to_image(
-    promptt,
+    prompt,
     model="your-preferred-model",  # Change this
 )
 ```
